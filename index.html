@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>Felix Wong Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -11,91 +12,99 @@
         }
 
         header {
-            background-color: #2c3e50;
+            background: #2c3e50;
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
             background: white;
-            padding: 30px;
+            padding: 20px;
+            margin: 20px 0;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #2c3e50;
-        }
-
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-
-        button:hover {
-            background-color: #2980b9;
         }
 
         footer {
             text-align: center;
-            padding: 15px;
-            color: #777;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
         }
     </style>
-
 </head>
 
 <body>
 
-    <header>
-        <h1>Felix Wong</h1>
-        <p>Electrical Site Supervisor</p>
-    </header>
+<header>
+    <h1>Felix Wong</h1>
+    <p>Electrical Site Supervisor</p>
+</header>
 
-    <div class="container">
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <img src="https://via.placeholder.com/150" alt="Profile Picture">
-
+<section id="about">
+    <div class="card">
         <h2>About Me</h2>
-        <p>
-            I supervise electrical installation work on-site. 
-            I ensure proper termination, guide workers, and maintain safety standards.
-        </p>
-
-        <button onclick="showMessage()">Contact Me</button>
-
+        <p>I supervise electrical installation work, manage workers, and ensure safety compliance on site.</p>
     </div>
+</section>
 
-    <footer>
-        <p>© 2026 Felix Wong</p>
-    </footer>
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Electrical Installation</li>
+            <li>Cable Termination</li>
+            <li>Site Supervision</li>
+            <li>Safety Management</li>
+        </ul>
+    </div>
+</section>
 
-    <script>
-        function showMessage() {
-            alert("Email: your@email.com");
-        }
-    </script>
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <p>Project 1: Substation installation</p>
+        <p>Project 2: HVAC electrical system</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Felix Wong</p>
+</footer>
 
 </body>
 </html>
