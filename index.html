@@ -70,6 +70,20 @@ footer {
     background: #2c3e50;
     color: white;
 }
+        @media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
     </style>
 </head>
 
@@ -125,12 +139,17 @@ footer {
     <div class="card">
         <h2>Contact</h2>
         <p>Email: your@email.com</p>
+        <button onclick="contactMe()">Email Me</button>
     </div>
 </section>
 
 <footer>
     <p>© 2026 Felix Wong</p>
 </footer>
-
+<script>
+function contactMe() {
+    alert("Email me at: your@email.com");
+}
+</script>
 </body>
 </html>
